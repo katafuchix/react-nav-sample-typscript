@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import './App.css';
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -11,6 +13,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Reports from "./pages/Reports";
 import TopPage from "./components/top/TopPage";
+import List from "./components/top/List";
 
 class App extends React.Component {
   page = "aa1a"
@@ -30,6 +33,7 @@ class App extends React.Component {
                 <Route path="/top">
                   <TopPage  page={this.page} />
                 </Route>
+                <Route path="/list" component={List} />
               </Switch>
             </Router>
           </Container>

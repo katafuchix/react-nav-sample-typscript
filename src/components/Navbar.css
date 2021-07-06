@@ -12,7 +12,7 @@
 
 .menu-bars {
   margin-left: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: none;
 }
 
@@ -26,6 +26,7 @@
   top: 0;
   left: -100%;
   transition: 850ms;
+  z-index: 289;
 }
 
 .nav-menu.active {
@@ -37,7 +38,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 8px 8px 16px;
+  padding: 8px 8px 0px 16px;
   list-style: none;
   height: 40px;
 }
